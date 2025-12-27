@@ -1,5 +1,5 @@
 ---
-date: 2019-05-24 10:20:00
+date: 2025-05-24 10:20:00
 layout: post
 title: Stories Are Where Real Influence Is Built
 subtitle: 'Followers trust what they see daily'

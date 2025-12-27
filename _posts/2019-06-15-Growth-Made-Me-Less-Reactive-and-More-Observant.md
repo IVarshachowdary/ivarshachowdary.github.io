@@ -1,5 +1,5 @@
 ---
-date: 2019-06-15 09:00:00
+date: 2025-06-15 09:00:00
 layout: post
 title: Growth Made Me Less Reactive and More Observant
 subtitle: 'Pause became my most powerful habit'

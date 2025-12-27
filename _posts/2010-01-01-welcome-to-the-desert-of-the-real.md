@@ -7,9 +7,9 @@ description: >-
   Many people believe Instagram growth depends on luck or viral posts. This
   article breaks that myth and explains what actually drives long-term growth.
 image: >-
-  https://picsum.photos/1200/700?random=13
+  https://picsum.photos/1200/700?random=1
 optimized_image: >-
-  https://picsum.photos/380/220?random=13
+  https://picsum.photos/380/220?random=1
 category: blog
 tags:
   - instagram

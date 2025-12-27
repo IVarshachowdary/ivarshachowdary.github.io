@@ -7,9 +7,9 @@ description: >-
   Instagram can become a career if approached strategically. This post explains
   how to build stability, not just popularity.
 image: >-
-  https://picsum.photos/1200/700?random=13
+  https://picsum.photos/1200/700?random=15
 optimized_image: >-
-  https://picsum.photos/380/220?random=13
+  https://picsum.photos/380/220?random=15
 category: blog
 tags:
   - career

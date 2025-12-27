@@ -1,5 +1,5 @@
 ---
-date: 2019-05-21 10:30:00
+date: 2025-05-21 10:30:00
 layout: post
 title: The Truth About Instagram Consistency
 subtitle: 'Daily posting is not the goal'

@@ -1,5 +1,5 @@
 ---
-date: 2019-06-10 09:00:00
+date: 2025-06-10 09:00:00
 layout: post
 title: I Learned That Consistency Is Emotional, Not Logical
 subtitle: 'Why knowing what to do was never the problem'

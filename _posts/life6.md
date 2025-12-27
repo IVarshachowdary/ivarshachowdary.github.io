@@ -1,5 +1,5 @@
 ---
-date: 2019-06-11 09:00:00
+date: 2025-06-11 09:00:00
 layout: post
 title: Growth Forced Me to Outgrow Certain Conversations
 subtitle: 'Not everyone grows in the same direction'

@@ -1,1 +1,16 @@
+{{- $opts := dict "displayMode" true }}
+{{- with transform.ToMath .Inner $opts }}
+    {{- if .Err }}
+        {{- errorf "Failed to render KaTeX: %q. See %s" . $.Position }}
+    {{- else }}
+        {{- if $.Attributes.class }}
+            <div class="{{ $.Attributes.class | safeHTMLAttr }}">{{ .Value }}</div>
+        {{- else }}
+            {{ .Value }}
+        {{- end }}
+    {{- end }}
+{{- else }}
+    <!-- Graceful fallback for errors or when math is not rendered -->
+    <p>Math rendering is unavailable or not supported.</p>
+{{- end }}
 

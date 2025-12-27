@@ -1,5 +1,5 @@
 ---
-date: 2019-05-19 09:00:00
+date: 2025-05-19 09:00:00
 layout: post
 title: Why Most Instagram Creators Burn Out Early
 subtitle: 'And how to avoid it'

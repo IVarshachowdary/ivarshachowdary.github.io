@@ -1,5 +1,5 @@
 ---
-date: 2019-06-17 09:00:00
+date: 2025-06-17 09:00:00
 layout: post
 title: I Learned That Discipline Looks Different in Different Seasons
 subtitle: 'Flexibility kept me consistent'

@@ -7,9 +7,9 @@ description: >-
   Reels are powerful, but most creators use them blindly. This post explains how
   to use reels strategically for real growth.
 image: >-
-  https://picsum.photos/1200/700?random=13
+  https://picsum.photos/1200/700?random=7
 optimized_image: >-
-  https://picsum.photos/380/220?random=13
+  https://picsum.photos/380/220?random=7
 category: blog
 tags:
   - reels

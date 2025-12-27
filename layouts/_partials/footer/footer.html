@@ -4,6 +4,10 @@
             {{- $copyright := printf "%s © %s %s %s." (T "copyright") (dateFormat "2006" now) .Site.Title (T "rights") }}
             {{ cond (gt (len .Site.Copyright) 0) .Site.Copyright $copyright }}
             {{ .Site.Params.footer.license | safeHTML }} |
+
+            <!-- Privacy Policy Link -->
+            <a href="/privacy-policy/" class="link-bg-footer">Privacy Policy</a> |
+
             {{ if .Site.Params.main.endorse }}
                 {{ $link := partial "assets/link.html" (dict
                     "href" (index site.Params.links "hinode")

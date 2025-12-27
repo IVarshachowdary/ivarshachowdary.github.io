@@ -1,5 +1,5 @@
 ---
-date: 2019-05-27 09:25:00
+date: 2025-05-27 09:25:00
 layout: post
 title: How to Read Instagram Insights Without Stress
 subtitle: 'Data should guide, not control'
@@ -41,5 +41,6 @@ One bad post does not mean failure.
 ## Reminder
 
 Use insights to learn, not judge yourself.
+
 
 

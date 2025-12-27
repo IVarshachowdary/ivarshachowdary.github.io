@@ -1,5 +1,5 @@
 ---
-date: 2019-06-18 09:00:00
+date: 2025-06-18 09:00:00
 layout: post
 title: I Stopped Treating Failure as a Personal Flaw
 subtitle: 'Failure became easier once I stopped taking it personally'

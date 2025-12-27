@@ -1,7 +1,7 @@
 ---
 date: 2025-06-07 09:00:00
 layout: post
-title: Discipline Didn’t Change My Life, Clarity Did
+title: Discipline Didn’t Change My Life Clarity Did
 subtitle: 'Why knowing why matters more than forcing habits'
 description: >-
   This post explores how discipline failed without clarity and how personal

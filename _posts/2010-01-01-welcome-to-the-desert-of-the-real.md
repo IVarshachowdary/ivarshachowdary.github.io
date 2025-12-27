@@ -1,5 +1,5 @@
 ---
-date: 2019-05-17 09:30:00
+date: 2025-05-17 09:30:00
 layout: post
 title: Growing on Instagram Is Not About Luck
 subtitle: 'What no one tells you before you start'

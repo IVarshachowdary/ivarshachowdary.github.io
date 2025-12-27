@@ -1,5 +1,5 @@
 ---
-date: 2019-06-13 09:00:00
+date: 2025-06-13 09:00:00
 layout: post
 title: I Realised Rest Is a Skill, Not a Reward
 subtitle: 'Burnout taught me what balance actually means'

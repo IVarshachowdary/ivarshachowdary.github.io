@@ -1,5 +1,5 @@
 ---
-date: 2019-05-20 09:45:00
+date: 2025-05-20 09:45:00
 layout: post
 title: Why Your Instagram Content Feels Invisible
 subtitle: 'It’s not the algorithm, it’s alignment'

@@ -1,5 +1,5 @@
 ---
-date: 2019-06-16 09:00:00
+date: 2025-06-16 09:00:00
 layout: post
 title: I Stopped Trying to Become Someone Else
 subtitle: 'Acceptance changed my growth direction'

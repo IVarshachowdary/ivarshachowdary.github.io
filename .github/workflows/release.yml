@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v4
+        uses: peaceiris/actions-hugo@v4.4.0
         with:
           hugo-version: 'latest-extended'
 
@@ -27,3 +27,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+

@@ -1,5 +1,5 @@
 ---
-date: 2019-05-30 10:45:00
+date: 2025-05-30 10:45:00
 layout: post
 title: The Long-Term Mindset Every Influencer Needs
 subtitle: 'Think years, not weeks'
@@ -69,5 +69,6 @@ Consistency keeps you ready for both.
 
 If you want short-term excitement, chase trends.  
 If you want long-term influence, build habits.
+
 
 

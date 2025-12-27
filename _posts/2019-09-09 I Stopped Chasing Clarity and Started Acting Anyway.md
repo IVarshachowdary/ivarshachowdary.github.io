@@ -1,5 +1,5 @@
 ---
-date: 2019-06-12 09:00:00
+date: 2025-06-12 09:00:00
 layout: post
 title: I Stopped Chasing Clarity and Started Acting Anyway
 subtitle: 'Action gave me answers thinking never did'

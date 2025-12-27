@@ -1,26 +1,8 @@
-{{/* 
-    Copyright © 2022 - 2025 The Hinode Team / Mark Dumay. All rights reserved.
-    Use of this source code is governed by The MIT License (MIT) that can be found in the LICENSE file.
-    Visit gethinode.com/license for more details.
-
-    This source code adapts the original embedded shortcode as maintained by the Hugo repository. It introduces the
-    following modifications:
-     - Isolated the styles to comply with the Content Security Policy
-     - Added validation of shortcode arguments
-     - Added support to retrieve the title from the video metadata
-     - Adjusted autoplay configuration
-     - Modified the layout
-    
-    The original source code is available on:
-    https://github.com/gohugoio/hugo/tpl/tplimpl/embedded/templates/shortcodes/youtube.html
-    https://github.com/gohugoio/hugo/tpl/tplimpl/embedded/templates/shortcodes/vimeo.html
-    Copyright 2022 The Hugo Authors. Licensed under the Apache License, Version 2.0.
-*/}}
-
+{{/* Copyright and License Information */}}
 {{ $error := false }}
 
 {{/* Initialize arguments */}}
-{{ $args := partial "utilities/InitArgs.html" (dict "structure" "video" "args" . "group" "partial")}}
+{{ $args := partial "utilities/InitArgs.html" (dict "structure" "video" "args" . "group" "partial") }}
 {{ if or $args.err $args.warnmsg }}
     {{ partial (cond $args.err "utilities/LogErr.html" "utilities/LogWarn.html") (dict 
         "partial" "assets/video.html" 
@@ -73,7 +55,7 @@
         {{ $api := printf "https://www.youtube.com/oembed?format=json&url=%s" (printf "https://www.youtube.com/watch?v=%s" $id) }}
         {{ $padding := "56.25%" }}
 
-        {{ with try (resources.GetRemote $api) }}
+        {{ with resources.GetRemote $api }}
             {{ with .Err }}
                 {{ errorf "Unable to parse video metadata '%q': %s\n  %s" $api $origin . }}
             {{ else }}
@@ -102,7 +84,7 @@
         {{- $dnt := cond $pc.EnableDNT 1 0 -}}
         {{- $query := querify "url" $url "dnt" $dnt -}}
         {{- $api := printf "https://vimeo.com/api/oembed.json?%s" $query -}}
-        {{- with try (resources.GetRemote $api) -}}
+        {{- with resources.GetRemote $api -}}
             {{ with .Err }}
                 {{ errorf "Unable to parse video metadata '%q': %s\n  %s" $api $origin . }}
             {{ else }}
@@ -163,3 +145,4 @@
         {{ warnf "partial [assets/video.html] - Unsupported video provider: %s" $provider }}
     {{ end }}
 {{ end -}}
+

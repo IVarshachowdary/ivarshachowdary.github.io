@@ -1,5 +1,5 @@
 ---
-date: 2019-06-06 09:00:00
+date: 2025-06-06 09:00:00
 layout: post
 title: The Day I Stopped Trying to Fix Everything at Once
 subtitle: 'Personal growth became easier when I slowed down'

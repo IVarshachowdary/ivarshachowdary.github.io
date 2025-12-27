@@ -1,5 +1,5 @@
 ---
-date: 2019-05-31 09:15:00
+date: 2025-12-31 09:15:00
 layout: post
 title: Turning Instagram Into a Sustainable Career
 subtitle: 'Beyond followers and likes'

@@ -7,9 +7,9 @@ description: >-
   This post reflects on how consistency depends more on emotional regulation than
   logic, and how managing inner states made personal growth sustainable.
 image: >-
-  https://picsum.photos/1200/700?random=206
+   assets/img/uploads/IMG_0018.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=206
+   assets/img/uploads/IMG_0018.jpeg
 category: blog
 tags:
   - consistency

@@ -7,9 +7,9 @@ description: >-
   This post explores how personal growth naturally changes relationships and why
   outgrowing certain conversations is a normal part of evolving.
 image: >-
-  https://picsum.photos/1200/700?random=207
+   assets/img/uploads/IMG_0016.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=207
+   assets/img/uploads/IMG_0016.jpeg
 category: blog
 tags:
   - relationships

@@ -7,9 +7,9 @@ description: >-
   This post explores how ignoring rest delayed growth and how learning to rest
   intentionally improved discipline, focus, and mental clarity.
 image: >-
-  https://picsum.photos/1200/700?random=209
+  assets/img/uploads/IMG_0014.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=209
+   assets/img/uploads/IMG_0014.jpeg
 category: blog
 tags:
   - rest

@@ -8,9 +8,9 @@ description: >-
   This post reflects on how glorifying struggle delayed real growth and how
   choosing ease, clarity, and sustainability led to better progress.
 image: >-
-  https://picsum.photos/1200/700?random=210
+  assets/img/uploads/IMG_0015.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=210
+  assets/img/uploads/IMG_0015.jpeg
 category: blog
 tags:
   - mindset

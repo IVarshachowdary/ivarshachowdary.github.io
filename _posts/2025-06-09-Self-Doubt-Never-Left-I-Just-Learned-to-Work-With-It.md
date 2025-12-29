@@ -7,9 +7,9 @@ description: >-
   This post explores how self-doubt remains part of growth and how learning to
   act alongside it builds real confidence over time.
 image: >-
-  assets/img/uploads/IMG_0019.jpeg
+  assets/img/uploads/IMG_0020.jpeg
 optimized_image: >-
-  assets/img/uploads/IMG_0019.jpeg
+  assets/img/uploads/IMG_0020.jpeg
 category: blog
 tags:
   - self doubt

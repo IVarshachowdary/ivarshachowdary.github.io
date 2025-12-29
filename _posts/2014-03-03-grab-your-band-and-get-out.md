@@ -7,9 +7,9 @@ description: >-
   Many creators rush into monetisation and lose audience trust. This post
   explains how to earn from Instagram without selling out.
 image: >-
-  https://picsum.photos/1200/700?random=13
+  assets/img/uploads/IMG_0023.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=13
+  assets/img/uploads/IMG_0023.jpeg
 category: blog
 tags:
   - monetisation
@@ -72,5 +72,6 @@ That is your signal.
 
 Protect trust like currency.  
 Money follows integrity.
+
 
 

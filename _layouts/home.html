@@ -34,7 +34,7 @@ layout: main
                 <div class="buttons">
                     <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
                         <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
+                        <span>{{ site.translations.button.read_now | default: "Scroll Down" }}</span>
                     </a>
                 </div>
             </div>
@@ -50,7 +50,8 @@ layout: main
                     </a>
                 </span>
                 <div class="box-body">
-                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="cover" href="href="{% if post.buy_link %}{{ post.buy_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+   {% if post.buy_link %}target="_blank"{% endif %}">
                         {% include loader.html %}
                         {% if post.optimized_image %}
                             <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
@@ -75,12 +76,14 @@ layout: main
                         <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
                             {% include date.html date=post.date %}
                         </time>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href=href="{% if post.buy_link %}{{ post.buy_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+   {% if post.buy_link %}target="_blank"{% endif %}">
                             <h2 class="post-title">
                                 {{ post.title }}
                             </h2>
                         </a>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href="href="{% if post.buy_link %}{{ post.buy_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+   {% if post.buy_link %}target="_blank"{% endif %}>
                             <p class="description">{{ post.description }}</p>
                         </a>
                         <div class="tags">

@@ -9,7 +9,7 @@ description: >-
 image: >-
   assets/img/uploads/IMG_0031.jpeg
 optimized_image: >-
-  assets/img/uploads/IMG_031.jpeg
+  assets/img/uploads/IMG_0031.jpeg
 category: blog
 tags:
   - failure

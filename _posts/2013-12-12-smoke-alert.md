@@ -7,9 +7,9 @@ description: >-
   Collaborations can accelerate growth if done right. This post explains how to
   choose and execute collaborations effectively.
 image: >-
-  https://picsum.photos/1200/700?random=10
+  assets/img/uploads/IMG_0029.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=10
+  assets/img/uploads/IMG_0029.jpeg
 category: blog
 tags:
   - collaborations

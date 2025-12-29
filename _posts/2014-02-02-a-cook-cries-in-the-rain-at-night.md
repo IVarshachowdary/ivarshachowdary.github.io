@@ -7,9 +7,9 @@ description: >-
   Authentic creators last longer on Instagram. This post explains why being real
   matters more than being perfect.
 image: >-
-  https://picsum.photos/1200/700?random=12
+  assets/img/uploads/IMG_0024.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=12
+  assets/img/uploads/IMG_0024.jpeg
 category: blog
 tags:
   - authenticity
@@ -37,6 +37,7 @@ Trust builds influence.
 ## Final note
 
 Be real. Growth will follow.
+
 
 
 

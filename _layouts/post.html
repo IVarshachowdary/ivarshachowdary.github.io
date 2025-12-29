@@ -116,8 +116,12 @@
                         {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
                         {% assign shuffled_array = next_posts | shuffle %}
                         {% for post in shuffled_array limit:3 %}
-                            <li>
-                                <a href="{{ post.buy_link | default: post.url | prepend: site.baseurl }}" target="_blank">
+                               <li>
+                                  {% if post.buy_link %}
+                                        <a href="{{ post.buy_link }}" target="_blank">
+                                  {% else %}
+                                        <a href="{{ post.url | prepend: site.baseurl }}">
+                                  {% endif %}
                                     {% if post.optimized_image %}
                                         <img src="{{ post.optimized_image }}">
                                     {% elsif post.image %}

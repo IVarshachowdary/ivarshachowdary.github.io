@@ -7,9 +7,9 @@ description: >-
   This post reflects on how constant busyness masked avoidance and how real
   personal growth began only after learning to slow down and focus.
 image: >-
-  https://picsum.photos/1200/700?random=204
+  assets/img/uploads/IMG_0023.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=204
+  assets/img/uploads/IMG_0023.jpeg
 category: blog
 tags:
   - personal growth

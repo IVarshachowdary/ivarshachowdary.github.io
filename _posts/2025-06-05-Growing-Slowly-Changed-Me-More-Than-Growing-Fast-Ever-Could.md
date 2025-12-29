@@ -8,9 +8,9 @@ description: >-
   It explores discipline, self-doubt, loneliness, and why quiet consistency
   reshapes a person more deeply than quick success.
 image: >-
-  https://picsum.photos/1200/700?random=201
+    assets/img/uploads/IMG_0029.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=201
+    assets/img/uploads/IMG_0029.jpeg
 category: blog
 tags:
   - personal growth

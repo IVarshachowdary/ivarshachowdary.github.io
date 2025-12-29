@@ -7,9 +7,9 @@ description: >-
   Many influencers quit early because they expect fast results. This post
   explains the mindset needed to grow sustainably on Instagram.
 image: >-
-  https://picsum.photos/1200/700?random=14
+  assets/img/uploads/IMG_0018.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=14
+  assets/img/uploads/IMG_0018.jpeg
 category: blog
 tags:
   - mindset
@@ -69,6 +69,7 @@ Consistency keeps you ready for both.
 
 If you want short-term excitement, chase trends.  
 If you want long-term influence, build habits.
+
 
 
 

@@ -7,9 +7,9 @@ description: >-
   This post reflects on how waiting for clarity delayed growth and how taking
   imperfect action created direction, confidence, and learning.
 image: >-
-  https://picsum.photos/1200/700?random=208
+  assets/img/uploads/IMG_0015.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=208
+  assets/img/uploads/IMG_015.jpeg
 category: blog
 tags:
   - clarity

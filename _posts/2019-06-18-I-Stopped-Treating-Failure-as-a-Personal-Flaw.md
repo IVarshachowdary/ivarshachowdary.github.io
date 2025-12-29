@@ -7,9 +7,9 @@ description: >-
   This post reflects on how personalising failure created fear and hesitation,
   and how reframing failure as feedback helped unlock consistent growth.
 image: >-
-  https://picsum.photos/1200/700?random=214
+  assets/img/uploads/IMG_0031.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=214
+  assets/img/uploads/IMG_031.jpeg
 category: blog
 tags:
   - failure

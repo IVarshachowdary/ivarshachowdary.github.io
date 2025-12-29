@@ -7,9 +7,9 @@ description: >-
   This post reflects on the habit of overcorrecting life and how meaningful
   growth began only after learning to focus on one change at a time.
 image: >-
-  https://picsum.photos/1200/700?random=202
+    assets/img/uploads/IMG_0027.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=202
+    assets/img/uploads/IMG_0027.jpeg
 category: blog
 tags:
   - personal growth

@@ -7,9 +7,9 @@ description: >-
   This post reflects on how comparison and imitation delayed personal growth and
   how accepting one’s natural pace, strengths, and limits created real progress.
 image: >-
-  https://picsum.photos/1200/700?random=212
+  assets/img/uploads/IMG_0020.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=212
+  assets/img/uploads/IMG_0020.jpeg
 category: blog
 tags:
   - self acceptance

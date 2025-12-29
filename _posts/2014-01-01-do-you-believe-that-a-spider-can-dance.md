@@ -7,9 +7,9 @@ description: >-
   Insights help you improve, but obsession harms creativity. This post explains
   how to use analytics wisely.
 image: >-
-  https://picsum.photos/1200/700?random=11
+  assets/img/uploads/IMG_0027.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=11
+ assets/img/uploads/IMG_0027.jpeg
 category: blog
 tags:
   - analytics
@@ -41,6 +41,7 @@ One bad post does not mean failure.
 ## Reminder
 
 Use insights to learn, not judge yourself.
+
 
 
 

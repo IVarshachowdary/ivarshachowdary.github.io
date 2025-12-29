@@ -9,7 +9,7 @@ description: >-
 image: >-
   assets/img/uploads/IMG_0015.jpeg
 optimized_image: >-
-  assets/img/uploads/IMG_015.jpeg
+  assets/img/uploads/IMG_0015.jpeg
 category: blog
 tags:
   - clarity

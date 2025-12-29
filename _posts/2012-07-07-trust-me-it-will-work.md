@@ -7,9 +7,9 @@ description: >-
   Captions play a bigger role than most creators realise. This post explains how
   to write captions that people read till the end.
 image: >-
-  https://picsum.photos/1200/700?random=6
+  assets/img/uploads/IMG_0020.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=6
+  assets/img/uploads/IMG_0020.jpeg
 category: blog
 tags:
   - captions

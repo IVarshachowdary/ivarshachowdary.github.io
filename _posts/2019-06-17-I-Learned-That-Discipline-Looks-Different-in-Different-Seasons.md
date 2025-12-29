@@ -7,9 +7,9 @@ description: >-
   This post explores how discipline must adapt across life phases and how rigid
   expectations often lead to burnout and self-judgment.
 image: >-
-  https://picsum.photos/1200/700?random=213
+  assets/img/uploads/IMG_0031.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=213
+  assets/img/uploads/IMG_0031.jpeg
 category: blog
 tags:
   - discipline

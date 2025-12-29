@@ -7,9 +7,9 @@ description: >-
   Instagram Stories build deeper connections than posts. This article explains
   why stories matter and how to use them intentionally.
 image: >-
-  https://picsum.photos/1200/700?random=8
+  assets/img/uploads/IMG_0031.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=8
+  assets/img/uploads/IMG_0031.jpeg
 category: blog
 tags:
   - stories

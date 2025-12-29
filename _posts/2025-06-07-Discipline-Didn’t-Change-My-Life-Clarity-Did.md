@@ -7,9 +7,9 @@ description: >-
   This post explores how discipline failed without clarity and how personal
   growth became sustainable only after understanding purpose.
 image: >-
-  https://picsum.photos/1200/700?random=203
+  assets/img/uploads/IMG_0024.jpeg
 optimized_image: >-
-  https://picsum.photos/380/220?random=203
+  assets/img/uploads/IMG_0024.jpeg
 category: blog
 tags:
   - discipline

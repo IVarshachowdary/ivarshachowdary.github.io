@@ -1,21 +1,21 @@
 ---
 date: 2025-06-18 09:00:00
 layout: post
-title: Bath 40 mins
+title: about me
 buy_link: https://3bcb1b5c-d8ac-4b4b-9643-311d5d78f3dd.paylinks.godaddy.com/0bc63947-1c34-4f19-89c9-e64
 subtitle: 'Failure became easier once I stopped taking it personally'
 description: >-
   Click on link to watch full video
 image: >-
-  assets/img/uploads/IMG_0031.png
+  assets/img/uploads/IMG_0031.jpeg
 optimized_image: >-
-  assets/img/uploads/IMG_0031.png
+  assets/img/uploads/IMG_0031.jpeg
 category: blog
 
 tags:
-  - Bath
-  - Fullnode
-  - Big Ballls
+  - About
+  - content
+  - Insta
 author: Varsha
 paginate: true
 ---

@@ -18,6 +18,8 @@ menu:
     url: /contact
   - title: Privacy Policy
     url: /privacy-policy
+  - title: Terms & Conditions
+    url: /terms/
   - title: Feed
     url: /feed.xml
 email: youremail@test.com

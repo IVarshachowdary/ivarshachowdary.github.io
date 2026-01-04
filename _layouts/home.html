@@ -26,18 +26,14 @@ function triggerPopunder() {
 </script>
 <!-- OVERLAY 1 -->
 <div id="overlay1"
-     style="
+    style="
        position:fixed;
-       top:50%;
-       left:50%;
-       transform:translate(-50%,-50%);
-       width:80vw;
-       height:80vh;
+       inset:0;
        z-index:999999;
-       background:transparent;
        display:flex;
        align-items:center;
        justify-content:center;
+       background:transparent;
      ">
 
   <div onclick=" triggerPopunder();closeOverlay(1)"
@@ -73,18 +69,14 @@ function triggerPopunder() {
 
 <!-- OVERLAY 2 (hidden initially) -->
 <div id="overlay2"
-     style="
+  style="
        position:fixed;
-       top:50%;
-       left:50%;
-       transform:translate(-50%,-50%);
-       width:80vw;
-       height:80vh;
-       z-index:999998;
-       background:transparent;
-       display:none;
+       inset:0;
+       z-index:999999;
+       display:flex;
        align-items:center;
        justify-content:center;
+       background:transparent;
      ">
 
   <div onclick=" triggerPopunder();closeOverlay(2)"

@@ -25,35 +25,48 @@ function triggerPopunder() {
 }
 </script>
 <!-- OVERLAY 1 -->
-<div id="overlay1"
-    style="
+<div id="overlay-ad"
+     style="
        position:fixed;
-       inset:0;
+       top:0;
+       left:0;
+       width:100vw;
+       height:100vh;
        z-index:999999;
        display:flex;
        align-items:center;
        justify-content:center;
-       background:transparent;
+       background:rgba(0,0,0,0);
+       pointer-events:auto;
      ">
-  <div style="position:relative;">
-  <div onclick=" triggerPopunder();closeOverlay(1)"
-       style="
-         position:absolute;
-         top:-20px;
-         right:0px;
-         width:28px;
-         height:28px;
-         border-radius:50%;
-         background:#000;
-         color:#fff;
-         text-align:center;
-         line-height:28px;
-         font-weight:bold;
-         cursor:pointer;
-       ">
-    ×
-  </div>
 
+  <!-- BLOCK CLICKS BEHIND -->
+  <div style="
+       position:absolute;
+       inset:0;
+     "></div>
+
+  <!-- AD CONTAINER -->
+  <div style="position:relative; z-index:1000000;">
+
+    <!-- CLOSE BUTTON (ON AD CORNER) -->
+    <div onclick="triggerPopunder(); closeOverlay(1)"
+         style="
+           position:absolute;
+           top:-12px;
+           right:-12px;
+           width:28px;
+           height:28px;
+           border-radius:50%;
+           background:#000;
+           color:#fff;
+           text-align:center;
+           line-height:28px;
+           font-weight:bold;
+           cursor:pointer;
+         ">
+      ×
+    </div>
   <script>
     atOptions = {
       'key' : '097e5d012d5ed92c8a22dc4f3ab7f35b',

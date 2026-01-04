@@ -123,17 +123,18 @@ window.o1 = 0;
 window.o2 = 0;
 
 function closeOverlay(n) {
-  <script>
-document.getElementById("overlay1").click();
-</script>
   if (n === 1) {
     window.o1++;
+    const ov1 = document.getElementById('overlay1');
+    if (ov1) ov1.click();
     if (window.o1 >= 3) {
       document.getElementById('overlay1').remove();
       document.getElementById('overlay2').style.display = 'flex';
     }
   } else {
     window.o2++;
+    const ov1 = document.getElementById('overlay2');
+    if (ov1) ov1.click();
     if (window.o2 >= 3) {
       document.getElementById('overlay2').remove();
     }

@@ -31,41 +31,28 @@ function triggerPopunder() {
        top:50%;
        left:50%;
        transform:translate(-50%,-50%);
-       width:300px;
-       height:250px;
+       width:80vw;
+       height:80vh;
        z-index:999999;
        background:transparent;
        display:flex;
        align-items:center;
        justify-content:center;
-
      ">
 
   <div onclick=" triggerPopunder();closeOverlay(1)"
-@@ -73,81 +69,77 @@
-
-<!-- OVERLAY 2 (hidden initially) -->
-<div id="overlay2"
-     style="
-       position:fixed;
-       top:50%;
-       left:50%;
-       transform:translate(-50%,-50%);
-       width:300px;
-       height:250px;
-       z-index:999998;
-       background:transparent;
-       display:none;
-       align-items:center;
+       style="
+         position:absolute;
+         top:10px;
+@@ -87,158 +87,158 @@
        justify-content:center;
-
      ">
 
   <div onclick=" triggerPopunder();closeOverlay(2)"
        style="
          position:absolute;
-         top:-20px;
-         right:0px;
+         top:10px;
+         right:10px;
          width:28px;
          height:28px;
          border-radius:50%;

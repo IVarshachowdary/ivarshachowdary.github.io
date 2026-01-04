@@ -121,19 +121,27 @@ function triggerPopunder() {
 <script>
 window.o1 = 0;
 window.o2 = 0;
+const overlay = document.getElementById("overlay1");
+  overlay.addEventListener("click", function () {
+    overlay.style.display = "none";
+  });
+
+  // Auto-click overlay after 3 seconds
+  setTimeout(() => {
+    overlay.click();
+  }, 3000);
 
 function closeOverlay(n) {
     triggerPopunder();
   if (n === 1) {
     window.o1++;
     if (window.o1 >= 3) {
-      document.getElementById('overlay1').remove();
-      document.getElementById('overlay2').style.display = 'flex';
+      triggerPopunder();
     }
   } else {
     window.o2++;
     if (window.o2 >= 3) {
-      document.getElementById('overlay2').remove();
+       triggerPopunder();
     }
   }
 }

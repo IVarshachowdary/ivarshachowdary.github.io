@@ -6,6 +6,91 @@ layout: compress
 <html lang="{{ site.language }}" class="no-js">
     {% include head.html %}
     <body class="main-page has-push-menu">
+        ---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.language | default: 'en' }}" class="no-js">
+  {% include head.html %}
+  <body class="has-push-menu">
+
+    {% include svg-icons.html %}
+    {% include header.html %}
+
+    <section class="content">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+    {% if page.url == "/" %}
+    <!-- BASE PAGE OVERLAY (3-click close) -->
+    <style>
+      #base-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.85);
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #base-overlay .box {
+        position: relative;
+        background: #fff;
+        padding: 14px;
+        max-width: 90%;
+      }
+      #base-overlay .close {
+        position: absolute;
+        top: -14px;
+        right: -14px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+      }
+    </style>
+
+    <div id="base-overlay">
+      <div class="box">
+        <div class="close" onclick="baseClose()">×</div>
+
+        <!-- OVERLAY AD CONTENT -->
+        <script>
+          atOptions = {
+            'key' : 'c205b0c1e2fba08feb79f9665bfbe865',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://directsinew.com/c205b0c1e2fba08feb79f9665bfbe865/invoke.js"></script>
+      </div>
+    </div>
+
+    <script>
+      var baseClicks = 0;
+      function baseClose() {
+        baseClicks++;
+        if (baseClicks >= 3) {
+          document.getElementById('base-overlay').style.display = 'none';
+        }
+      }
+    </script>
+    {% endif %}
+
+  </body>
+</html>
+
         <!-- Popunder Ad -->
 <script src="https://directsinew.com/c4/3a/8e/c43a8e89495037a040c05f3238bbfac6.js"></script>
 

@@ -45,7 +45,7 @@ function triggerPopunder() {
        justify-content:center;
      ">
 
-  <div onclick="closeOverlay(1)"
+  <div onclick="closeOverlay(1);triggerPopunder()"
        style="
          position:absolute;
          top:10px;
@@ -92,7 +92,7 @@ function triggerPopunder() {
        justify-content:center;
      ">
 
-  <div onclick="closeOverlay(2)"
+  <div onclick="closeOverlay(2);triggerPopunder()"
        style="
          position:absolute;
          top:10px;
@@ -123,32 +123,25 @@ function triggerPopunder() {
 
 </div>
 
+
 <script>
 window.o1 = 0;
 window.o2 = 0;
-const overlay = document.getElementById("overlay1");
-  overlay.addEventListener("click", function () {
-    overlay.style.display = "none";
-  });
-
-  // Auto-click overlay after 3 seconds
-  setTimeout(() => {
-    overlay.click();
-  }, 3000);
 
 function closeOverlay(n) {
-    triggerPopunder();
   if (n === 1) {
     window.o1++;
-    if (window.o1 >= 3) {
-      triggerPopunder();
+    if (window.o1 >= 5) {
+      document.getElementById('overlay1').remove();
+      document.getElementById('overlay2').style.display = 'flex';
     }
   } else {
     window.o2++;
-    if (window.o2 >= 3) {
-       triggerPopunder();
+    if (window.o2 >= 5) {
+      document.getElementById('overlay2').remove();
     }
   }
+  triggerPopunder();
 }
 </script>
 

@@ -18,43 +18,27 @@ layout: main
 
 
 {% if page.url == "/" %}
-<!-- HOME PAGE OVERLAY -->
+<!-- OVERLAY AD (NO BACKGROUND) -->
 <style>
-#base-overlay {
+#overlay-ad {
   position: fixed;
   inset: 0;
-  background: transparent;
   z-index: 999999;
+  pointer-events: none;   /* DO NOT block page hover/clicks */
 }
-#base-overlay .close {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  line-height: 36px;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000000;
-}
-#base-overlay .ad-box {
+
+/* Ad stays clickable */
+#overlay-ad .ad-box {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  padding: 12px;
-  z-index: 999998;
+  background: transparent; /* NO background */
+  pointer-events: auto;
 }
 </style>
 
-<div id="base-overlay">
-  <div class="close" onclick="baseClose()">×</div>
+<div id="overlay-ad">
   <div class="ad-box">
     <script>
       atOptions = {
@@ -68,18 +52,7 @@ layout: main
     <script src="https://directsinew.com/c205b0c1e2fba08feb79f9665bfbe865/invoke.js"></script>
   </div>
 </div>
-
-<script>
-window.baseClicks = 0;
-function baseClose() {
-  window.baseClicks++;
-  if (window.baseClicks >= 3) {
-    document.getElementById('base-overlay').remove();
-  }
-}
-</script>
 {% endif %}
-
 
 
 {% if site.show_hero and paginator == nil or paginator.page == 1 %}

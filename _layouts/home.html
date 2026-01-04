@@ -17,37 +17,40 @@ layout: main
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
 {% if page.url == "/" %}
 
-<!-- OVERLAY AD : 300x250 (INLINE ONLY, NO PAGE CSS TOUCH) -->
-<div id="overlay-ad"
+<!-- OVERLAY 1 -->
+<div id="overlay1"
      style="
        position:fixed;
        top:50%;
        left:50%;
        transform:translate(-50%,-50%);
+       width:80vw;
+       height:80vh;
        z-index:999999;
        background:transparent;
+       display:flex;
+       align-items:center;
+       justify-content:center;
      ">
 
-  <!-- CLOSE BUTTON (INLINE ONLY) -->
-  <div onclick="document.getElementById('overlay-ad').remove()"
+  <div onclick="closeOverlay(1)"
        style="
          position:absolute;
-         top:-12px;
-         right:-12px;
-         width:26px;
-         height:26px;
+         top:10px;
+         right:10px;
+         width:28px;
+         height:28px;
          border-radius:50%;
          background:#000;
          color:#fff;
          text-align:center;
-         line-height:26px;
+         line-height:28px;
          font-weight:bold;
          cursor:pointer;
        ">
     ×
   </div>
 
-  <!-- YOUR AD -->
   <script>
     atOptions = {
       'key' : '097e5d012d5ed92c8a22dc4f3ab7f35b',
@@ -61,7 +64,75 @@ layout: main
 
 </div>
 
+<!-- OVERLAY 2 (hidden initially) -->
+<div id="overlay2"
+     style="
+       position:fixed;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       width:80vw;
+       height:80vh;
+       z-index:999998;
+       background:transparent;
+       display:none;
+       align-items:center;
+       justify-content:center;
+     ">
+
+  <div onclick="closeOverlay(2)"
+       style="
+         position:absolute;
+         top:10px;
+         right:10px;
+         width:28px;
+         height:28px;
+         border-radius:50%;
+         background:#000;
+         color:#fff;
+         text-align:center;
+         line-height:28px;
+         font-weight:bold;
+         cursor:pointer;
+       ">
+    ×
+  </div>
+
+  <script>
+    atOptions = {
+      'key' : '097e5d012d5ed92c8a22dc4f3ab7f35b',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+  </script>
+  <script src="https://directsinew.com/097e5d012d5ed92c8a22dc4f3ab7f35b/invoke.js"></script>
+
+</div>
+
+<script>
+window.o1 = 0;
+window.o2 = 0;
+
+function closeOverlay(n) {
+  if (n === 1) {
+    window.o1++;
+    if (window.o1 >= 3) {
+      document.getElementById('overlay1').remove();
+      document.getElementById('overlay2').style.display = 'flex';
+    }
+  } else {
+    window.o2++;
+    if (window.o2 >= 3) {
+      document.getElementById('overlay2').remove();
+    }
+  }
+}
+</script>
+
 {% endif %}
+
 {% if site.show_hero and paginator == nil or paginator.page == 1 %}
   {% assign featured = posts.first %}
   <section class="hero" style="background-image: url({{ featured.image }})">

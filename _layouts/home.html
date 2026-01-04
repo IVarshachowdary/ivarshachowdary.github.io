@@ -40,7 +40,7 @@ function triggerPopunder() {
        justify-content:center;
      ">
 
-  <div onclick="triggerPopunder();closeOverlay(1)"
+  <div onclick="closeOverlay(1)"
        style="
          position:absolute;
          top:10px;
@@ -87,7 +87,7 @@ function triggerPopunder() {
        justify-content:center;
      ">
 
-  <div onclick="triggerPopunder();closeOverlay(2)"
+  <div onclick="closeOverlay(2)"
        style="
          position:absolute;
          top:10px;
@@ -123,6 +123,7 @@ window.o1 = 0;
 window.o2 = 0;
 
 function closeOverlay(n) {
+    triggerPopunder();
   if (n === 1) {
     window.o1++;
     if (window.o1 >= 3) {

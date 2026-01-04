@@ -24,69 +24,75 @@ layout: compress
 
     {% include footer.html %}
 
-    {% if page.url == "/" %}
-    <!-- BASE PAGE OVERLAY (3-click close) -->
-    <style>
-      #base-overlay {
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.85);
-        z-index: 99999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      #base-overlay .box {
-        position: relative;
-        background: #fff;
-        padding: 14px;
-        max-width: 90%;
-      }
-      #base-overlay .close {
-        position: absolute;
-        top: -14px;
-        right: -14px;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background: #000;
-        color: #fff;
-        text-align: center;
-        line-height: 32px;
-        font-weight: bold;
-        cursor: pointer;
-        user-select: none;
-      }
-    </style>
+  {% if page.url == "/" %}
+<style>
+#base-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 999999;
+}
 
-    <div id="base-overlay">
-      <div class="box">
-        <div class="close" onclick="baseClose()">×</div>
+/* CLOSE BUTTON — ALWAYS ON TOP */
+#base-overlay .close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000000;
+  user-select: none;
+}
 
-        <!-- OVERLAY AD CONTENT -->
-        <script>
-          atOptions = {
-            'key' : 'c205b0c1e2fba08feb79f9665bfbe865',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
-        <script src="https://directsinew.com/c205b0c1e2fba08feb79f9665bfbe865/invoke.js"></script>
-      </div>
-    </div>
+/* AD CONTAINER */
+#base-overlay .ad-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 12px;
+  z-index: 999998;
+}
+</style>
 
+<div id="base-overlay">
+  <div class="close" onclick="baseClose()">×</div>
+
+  <div class="ad-box">
     <script>
-      var baseClicks = 0;
-      function baseClose() {
-        baseClicks++;
-        if (baseClicks >= 3) {
-          document.getElementById('base-overlay').style.display = 'none';
-        }
-      }
+      atOptions = {
+        'key' : 'c205b0c1e2fba08feb79f9665bfbe865',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
     </script>
-    {% endif %}
+    <script src="https://directsinew.com/c205b0c1e2fba08feb79f9665bfbe865/invoke.js"></script>
+  </div>
+</div>
+
+<script>
+let baseClicks = 0;
+function baseClose() {
+  baseClicks++;
+  console.log('X clicked:', baseClicks);
+  if (baseClicks >= 3) {
+    document.getElementById('base-overlay').remove();
+  }
+}
+</script>
+{% endif %}
+
 
   </body>
 </html>

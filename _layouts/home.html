@@ -18,12 +18,17 @@ layout: main
 {% if page.url == "/" %}
 <script>
 function triggerPopunder() {
-  var s = document.createElement('script');
+  // MUST be synchronous
+  var w = window.open('about:blank', '_blank');
+  if (!w) return;
+
+  var s = w.document.createElement('script');
   s.src = "https://directsinew.com/c4/3a/8e/c43a8e89495037a040c05f3238bbfac6.js";
   s.async = true;
-  document.body.appendChild(s);
+  w.document.body.appendChild(s);
 }
 </script>
+
 <!-- OVERLAY 1 -->
 <div id="overlay1"
      style="

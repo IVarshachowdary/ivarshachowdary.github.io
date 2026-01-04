@@ -17,17 +17,17 @@ layout: compress
     {% include footer.html %}
 
     {% if page.url == "/" %}
-    <!-- BASE PAGE OVERLAY (3-click close) -->
+    <!-- BASE PAGE OVERLAY (3-click close, NO color change) -->
     <style>
       #base-overlay {
         position: fixed;
         inset: 0;
-        background: rgba(0,0,0,0.85);
+        background: transparent; /* MATCH HOME PAGE */
         z-index: 999999;
-        display: none; /* IMPORTANT */
         pointer-events: none;
       }
 
+      /* CLOSE BUTTON — ALWAYS ON TOP */
       #base-overlay .close {
         position: fixed;
         top: 20px;
@@ -47,6 +47,7 @@ layout: compress
         pointer-events: auto;
       }
 
+      /* AD CONTAINER */
       #base-overlay .ad-box {
         position: fixed;
         top: 50%;
@@ -78,17 +79,11 @@ layout: compress
 
     <script>
       window.baseClicks = 0;
-
-      window.addEventListener('load', function () {
-        var o = document.getElementById('base-overlay');
-        if (o) o.style.display = 'block';
-      });
-
       function baseClose() {
         window.baseClicks++;
         if (window.baseClicks >= 3) {
-          var o = document.getElementById('base-overlay');
-          if (o) o.remove();
+          var el = document.getElementById('base-overlay');
+          if (el) el.remove();
         }
       }
     </script>

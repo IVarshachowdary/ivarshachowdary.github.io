@@ -25,48 +25,60 @@ function triggerPopunder() {
 }
 </script>
 <!-- OVERLAY 1 -->
-<div id="overlay-ad"
+<div id="overlay1"
      style="
        position:fixed;
-       top:0;
-       left:0;
-       width:100vw;
-       height:100vh;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       width:300px;
+       height:250px;
        z-index:999999;
+       background:transparent;
        display:flex;
        align-items:center;
        justify-content:center;
-       background:rgba(0,0,0,0);
-       pointer-events:auto;
+
      ">
 
-  <!-- BLOCK CLICKS BEHIND -->
-  <div style="
-       position:absolute;
-       inset:0;
-     "></div>
+  <div onclick=" triggerPopunder();closeOverlay(1)"
+@@ -73,81 +69,77 @@
 
-  <!-- AD CONTAINER -->
-  <div style="position:relative; z-index:1000000;">
+<!-- OVERLAY 2 (hidden initially) -->
+<div id="overlay2"
+     style="
+       position:fixed;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       width:300px;
+       height:250px;
+       z-index:999998;
+       background:transparent;
+       display:none;
+       align-items:center;
+       justify-content:center;
 
-    <!-- CLOSE BUTTON (ON AD CORNER) -->
-    <div onclick="triggerPopunder(); closeOverlay(1)"
-         style="
-           position:absolute;
-           top:-12px;
-           right:-12px;
-           width:28px;
-           height:28px;
-           border-radius:50%;
-           background:#000;
-           color:#fff;
-           text-align:center;
-           line-height:28px;
-           font-weight:bold;
-           cursor:pointer;
-         ">
-      ×
-    </div>
+     ">
+
+  <div onclick=" triggerPopunder();closeOverlay(2)"
+       style="
+         position:absolute;
+         top:-20px;
+         right:0px;
+         width:28px;
+         height:28px;
+         border-radius:50%;
+         background:#000;
+         color:#fff;
+         text-align:center;
+         line-height:28px;
+         font-weight:bold;
+         cursor:pointer;
+       ">
+    ×
+  </div>
+
   <script>
     atOptions = {
       'key' : '097e5d012d5ed92c8a22dc4f3ab7f35b',

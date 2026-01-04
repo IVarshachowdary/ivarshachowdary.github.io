@@ -15,7 +15,53 @@ layout: main
 {% endif %}
 
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
+{% if page.url == "/" %}
 
+<!-- OVERLAY AD : 300x250 (INLINE ONLY, NO PAGE CSS TOUCH) -->
+<div id="overlay-ad"
+     style="
+       position:fixed;
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       z-index:999999;
+       background:transparent;
+     ">
+
+  <!-- CLOSE BUTTON (INLINE ONLY) -->
+  <div onclick="document.getElementById('overlay-ad').remove()"
+       style="
+         position:absolute;
+         top:-12px;
+         right:-12px;
+         width:26px;
+         height:26px;
+         border-radius:50%;
+         background:#000;
+         color:#fff;
+         text-align:center;
+         line-height:26px;
+         font-weight:bold;
+         cursor:pointer;
+       ">
+    ×
+  </div>
+
+  <!-- YOUR AD -->
+  <script>
+    atOptions = {
+      'key' : '097e5d012d5ed92c8a22dc4f3ab7f35b',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
+  </script>
+  <script src="https://directsinew.com/097e5d012d5ed92c8a22dc4f3ab7f35b/invoke.js"></script>
+
+</div>
+
+{% endif %}
 {% if site.show_hero and paginator == nil or paginator.page == 1 %}
   {% assign featured = posts.first %}
   <section class="hero" style="background-image: url({{ featured.image }})">

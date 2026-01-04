@@ -1,0 +1,7 @@
+.ad-slot {
+  width: 300px;
+  height: 250px;       /* CRITICAL */
+  margin: 20px auto;
+  display: block;
+  overflow: hidden;   /* prevents hover repaint bug */
+}
